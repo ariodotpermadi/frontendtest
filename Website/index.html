@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Farmskins</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  	<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		*{
+			padding: 0;
+			margin:0;
+		}
+		body{
+			background-color: black;
+			font-color:white;
+		}
+
+		span{
+			
+			box-shadow: 0px 1px 1px 0px #ffd700, 0px 1px 1px 0px #ffd700;
+	 	}
+
+
+		
+		.box1{
+			margin-right: -0px;
+			margin-top: -70px;
+			margin-top: -70px;
+		}
+
+		.header{
+			background-color:#808080;
+			opacity: 0.1px;
+		}
+
+		/*FULL ITEM*/
+		.card_item1 {
+  			box-shadow: 0 4px 8px 0 #ffd700;
+  			transition: 0.3s;
+  			width: 18%;
+  			height: 60%;
+  			background-color:#696969;
+  			border-radius: 10px 10px 10px 10px;
+
+		}
+
+		.card_item2 {
+  			box-shadow: 0 4px 8px 0 #ffd700;
+  			transition: 0.3s;
+  			width: 18%;
+  			height: 60%;
+  			background-color:#696969;
+  			border-radius: 10px 10px 10px 10px;
+  			float: right;
+  			margin-top: -215px;
+  			margin-right: 680px;
+  		}
+
+  		.card_item3 {
+  			box-shadow: 0 4px 8px 0 #ffd700;
+  			transition: 0.3s;
+  			width: 18%;
+  			height: 60%;
+  			background-color:#696969;
+  			border-radius: 10px 10px 10px 10px;
+  			float: right;
+  			margin-top: -215px;
+  			margin-right: 450px;
+  		}
+
+  		.card_item4 {
+  			box-shadow: 0 4px 8px 0 #ffd700;
+  			transition: 0.3s;
+  			width: 18%;
+  			height: 60%;
+  			background-color:#696969;
+  			border-radius: 10px 10px 10px 10px;
+  			float: left;
+  			margin-top: -215px;
+  			margin-left: 690px;
+  		}
+
+  		.card_item5 {
+  			box-shadow: 0 4px 8px 0 #ffd700;
+  			transition: 0.3s;
+  			width: 18%;
+  			height: 60%;
+  			background-color:#696969;
+  			border-radius: 10px 10px 10px 10px;
+  			float: left;
+  			margin-top: -215px;
+  			margin-left: 910px;
+  		}
+
+		.card_item1:hover {
+  			box-shadow: 0 8px 16px 0 #ffd700;
+		}
+
+		.card_item2:hover {
+  			box-shadow: 0 8px 16px 0 #ffd700;
+		}
+
+		.card_item3:hover {
+  			box-shadow: 0 8px 16px 0 #ffd700;
+		}
+
+		.card_item4:hover {
+  			box-shadow: 0 8px 16px 0 #ffd700;
+		}
+
+		.card_item5:hover {
+  			box-shadow: 0 8px 16px 0 #ffd700;
+		}
+
+		.container_card {
+  			
+  			background-color:#696969;
+  			height: 70px;
+
+		}
+		 .border_rounded:hover{
+			height: 30px;
+			background-color: #ffd700;
+		}
+		.border_rounded{
+			border: 2px solid gold;
+			border-radius: 40px;
+			width: 140px;
+			margin-top: -7px; 
+			margin-left: 40px;
+		}		
+		
+		.border_rounded2{
+			border: 2px solid gold;
+			border-radius: 40px;
+			width: 250px;
+			margin-top:-20px;
+			margin-left: 400px;
+			background-color: #ffd700;
+		}
+		.border_rounded2:hover{
+			
+			background-color: #dcdcdc;
+		}			
+	</style>
+	<script>
+		$(document).ready(function(){
+			$(".effect1").mouseover(function(){
+				$(".p1").fadeIn("slow");
+			});
+			$(".effect1").mouseleave(function(){
+				$(".p1").fadeOut("slow");
+			});
+		});
+
+		$(document).ready(function(){
+			$(".effect2").mouseover(function(){
+				$(".p2").fadeIn("slow");
+			});
+			$(".effect2").mouseleave(function(){
+				$(".p2").fadeOut("slow");
+			});
+		});
+
+		$(document).ready(function(){
+			$(".effect3").mouseover(function(){
+				$(".p3").fadeIn("slow");
+			});
+			$(".effect3").mouseleave(function(){
+				$(".p3").fadeOut("slow");
+			});
+		});
+
+		$(document).ready(function(){
+			$(".effect4").mouseover(function(){
+				$(".p4").fadeIn("slow");
+			});
+			$(".effect4").mouseleave(function(){
+				$(".p4").fadeOut("slow");
+			});
+		});
+
+		$(document).ready(function(){
+			$(".effect5").mouseover(function(){
+				$(".p5").fadeIn("slow");
+			});
+			$(".effect5").mouseleave(function(){
+				$(".p5").fadeOut("slow");
+			});
+		});
+
+		$(document).ready(function(){
+			$(".effect6").mouseover(function(){
+				$(".p6").fadeIn("slow");
+			});
+			$(".effect6").mouseleave(function(){
+				$(".p6").fadeOut("slow");
+			});
+		});
+
+		$(document).ready(function(){
+			$(".effect7").mouseover(function(){
+				$(".p7").fadeIn("slow");
+			});
+			$(".effect7").mouseleave(function(){
+				$(".p7").fadeOut("slow");
+			});
+		});
+
+		$(document).ready(function(){
+			$(".effect8").mouseover(function(){
+				$(".p8").fadeIn("slow");
+			});
+			$(".effect8").mouseleave(function(){
+				$(".p8").fadeOut("slow");
+			});
+		});
+
+		$(document).ready(function(){
+			$(".effect9").mouseover(function(){
+				$(".p9").fadeIn("slow");
+			});
+			$(".effect9").mouseleave(function(){
+				$(".p9").fadeOut("slow");
+			});
+		});
+	</script>
+</head>
+<body>
+	<!--Header Atas-->
+	<div class="container-fluid-lg">
+		<nav class="navbar navbar-expand-sm bg-dark ">
+			<h6 style="color:#f8f8ff; margin-right: 20px;">Choose Language:</h6>
+				<select>
+				<option>EN</option>
+				<option>IDN</option>
+			</select>
+			<h6 style="color: #f8f8ff; margin-left: 400px; margin-top: 5px;">Join us :</h6>
+				<a href="facebook.com"><img src="facebook.png" width="20px;" style="margin-right: 10px;"></a>
+				<a href="twitter.com"><img src="twitter.png" width="20px;" style="margin-right: 10px;"></a>
+				<a href="instagram.com"><img src="instagram.png" width="20px;" style="margin-right: 10px;"></a>
+				<a href="reddit.com"><img src="reddit.png" width="20px;" style="margin-right: 10px;"></a>
+		<div style="margin-left: 300px; float: right;">	
+			<button type="button" class="btn btn-primary"><img src="facebook.png" width="20px;">Share</button>
+			<button type="button" class="btn btn-primary"><img src="twitter.png" width="20px;">Tweet</button>
+		</div>
+		</nav>
+
+		<!--Logo-->	
+		<div class="container-fluid-lg">
+			<img src="logo.png" style="margin-top: 8px; margin-left: 50px; width: 210px;">
+			<!--box-->
+			<div class="box1">
+			<span class="rounded-lg" id="" style="float: right; margin-right: 10px; box-shadow: none;"><button class="btn btn-success"><img src="steam.png" style="width: 35px;"><p style="margin-bottom:-7px; margin-top: -5px;">Sign in through STEAM</button></span>
+			<span class="rounded-lg" id="" style="float: right; margin-right: 10px;"><button class="btn btn-dark"><img src="partner.png" style="width: 35px;"><p style="margin-bottom:-7px; margin-top: -5px;">Partner</p></button></span>
+ 			<span class="rounded-lg" id="" style="float: right; margin-right: 10px"><button class="btn btn-dark"><img src="bonus.png" style="width: 35px;"><p style="margin-bottom:-7px; margin-top: -5px;">Dialy Bonus</button></span>
+ 			<span class="rounded-lg" id="" style="float: right; margin-right: 10px"><button class="btn btn-dark"><img src="winner.png" style="width: 35px;"><p style="margin-bottom:-7px; margin-top: -5px;">Give Away</button></span>
+ 			<span class="rounded-lg" id="" style="float: right; margin-right: 10px"><button class="btn btn-dark"><img src="upgrade.png" style="width: 35px;"><p style="margin-bottom:-7px; margin-top: -5px;">Upgrade</button></span>
+ 			<span class="rounded-lg" id="" style="float: right; margin-right: 10px"><button class="btn btn-dark"><img src="crown.png" style="width: 35px;"><p style="margin-bottom:-7px; margin-top: -5px;">Contract</button></span>
+ 			<span class="rounded-lg" id="" style="float: right; margin-right: 10px"><button class="btn btn-dark"><img src="battle.png" style="width: 35px;"><p style="margin-bottom:-7px; margin-top: -5px;">Case Battle</button></span>
+			</div>
+		</div>
+		<br><br><br><br>
+
+
+		<!--ITEM-->
+		<div class="container">
+			<div class="card">
+				<div class="header">
+					<span style="float: left; margin-left: 30px;" class="rounded-lg"><img src="key.png" style="width: 40px; ">Total Opened<p style="margin-top: -7px; margin-left: 70px;"><strong>123456</strong></p></span>
+					<span style="float: left; margin-left: 70px;"><img src="knife.png" style="width: 40px;">KNIVES<p style="margin-top: -7px; margin-left: 40px;"><strong>123456</strong></p></span>
+					<span style="float: left; margin-left: 70px;"><img src="ak47.png" style="width: 40px;">COVERT<p style="margin-top: -7px; margin-left: 40px;"><strong>123456</strong></p></span>
+					<span style="float: left; margin-left: 70px;"><img src="gun.png" style="width: 40px;">CLASSIFIED<p style="margin-top: -7px; margin-left: 40px;"><strong>123456</strong></p></span>
+					<span style="float: left; margin-left: 70px;"><img src="sniper.png" style="width: 40px;">RESTRICTED<p style="margin-top: -7px; margin-left: 40px;"><strong>123456</strong></p></span>
+					<span style="float: left; margin-left: 70px;"><img src="blueui.png" style="width: 40px;">MIL-SPEC<p style="margin-top: -7px; margin-left: 40px;"><strong>123456</strong></p></span>
+				</div>
+				<!--CAROUSEL-->
+				<div class="container-fluid-lg" style="height: 150px;">
+					<h6 style="text-align: center; color: ">RECENT ITEM</h6>  
+  				<div class="header">
+					<div class="effect1"><span style="float: left; margin-left: 30px;"><img src="glue.png" style="width: 40px; "><p style="margin-top:-7px; margin-left: 70px;"><strong></strong><p style="display: none"><p class="p1" style="display: none;">GLUE</p></span></div>
+					<div class="effect2"><span style="float: left; margin-left: 70px;" class="effect"><img src="knife.png" style="width: 40px;"><p style="margin-top: -7px; margin-left: 40px;"><strong></strong><p style="display: none" class="p2">KNIFE</p></span></div>
+					<div class="effect3"><span style="float: left; margin-left: 70px;" class="effect"><img src="ak47.png" style="width: 40px;"><p style="margin-top: -7px; margin-left: 40px;"><strong></strong><p style="display: none" class="p3">AK47</p></span></div>
+					<div class="effect4"><span style="float: left; margin-left: 70px;" class="effect"><img src="gun.png" style="width: 40px;"><p style="margin-top: -7px; margin-left: 40px;"><strong></strong><p style="display: none" class="p4">GUN</p></span></div>
+					<div class="effect5"><span style="float: left; margin-left: 70px;" class="effect"><img src="sniper.png" style="width: 40px;"><p style="margin-top: -7px; margin-left: 40px;"><strong></strong><p style="display: none" class="p5">SNIPER</p></span></div>
+					<div class="effect6"><span style="float: left; margin-left: 70px;" class="effect"><img src="blueui.png" style="width: 40px;"><p style="margin-top: -7px; margin-left: 40px;"><strong></strong><p style="display: none" class="p6">BLUE UI</p></span></div>
+					<div class="effect7"><span style="float: left; margin-left: 70px;" class="effect"><img src="musket.png" style="width: 40px;"><p style="margin-top: -7px; margin-left: 40px;"><strong></strong><p style="display: none" class="p7">MUSKET</p></span></div>
+					<div class="effect8"><span style="float: left; margin-left: 70px;" class="effect"><img src="nerf.png" style="width: 40px;"><p style="margin-top: -7px; margin-left: 40px;"><strong></strong><p style="display: none" class="p8">NERF</p></span></div>
+					<div class="effect9"><span style="float: left; margin-left: 70px;" class="effect"><img src="armgun.png" style="width: 40px;"><p style="margin-top: -7px; margin-left: 40px;"><strong></strong><p style="display: none" class="p9">ARM GUN</p></span></div>
+
+				</div>
+    			</div>
+
+    			
+			</div><br>
+
+			<!--LINE-->
+			<hr size="15px;" width="30%" ; style="background-color: #ffd700; float: right;"> <hr size="15px;" width="30%" align="left"; style="background-color: #ffd700;">
+			<div  style="float: right; margin-top: -42px; margin-right: 720px;"><img src="left_arrow.png" style="width: 50px;"></div>
+			<div  style="float: left; margin-top:-50px; margin-left: 720px;"><img src="right_arrow.png" style="width: 50px;"></div>
+			<p style="float: right; margin-top: -40px; margin-right: 470px; font-size: 20px; color: #ffd700"><strong>TRENDING CASES</strong></p><br>
+
+			<!--Full Item Card-->
+			<div class="container-fluid-lg">
+				<div class="card_item1">
+					<img src="water_pressure.png" alt="Water Pressure" style="width: 80%; margin: 20px; margin-top: 5px;">
+					<div class="container_card"><h5 style="color: white; margin-left: 25px; margin-top: -40px;"><strong>WATER PRESSURE</strong></h5>
+						<div class="border_rounded"><a href="" style="text-decoration: none; margin:6px ; color: #87cefa;" ><strong>Price $1.99 USD</strong></a> </div></div>	
+				</div>
+				<div class="card_item2">
+					<img src="dinked.png" alt="Water Pressure" style="width: 80%; margin: 20px; margin-top: 5px;">
+					<div class="container_card"><h5 style="color: white; margin-left: 70px; margin-top: -40px;"><strong>DINKED</strong></h5>
+						<div class="border_rounded"><a href="" style="text-decoration: none; margin:6px ; color: #87cefa;" ><strong>Price $6.99 USD</strong></a> </div></div>	
+				</div>
+				<div class="card_item3">
+					<img src="ready_player.png" alt="Water Pressure" style="width: 80%; margin: 20px; margin-top: 5px;">
+					<div class="container_card"><h5 style="color: white; margin-left: 2px; margin-top: -40px;"><strong>READY PLAYER TWO</strong></h5>
+						<div class="border_rounded"><a href="" style="text-decoration: none; margin:6px ; color: #87cefa;" ><strong>Price $18.99 USD</strong></a> </div></div>	
+				</div>
+				<div class="card_item4">
+					<img src="neon_future.png" alt="Neon Future" style="width: 80%; margin: 20px; margin-top: 5px;">
+					<div class="container_card"><h5 style="color: white; margin-left: 40px; margin-top: -40px;"><strong>NEON FUTURE</strong></h5>
+						<div class="border_rounded"><a href="" style="text-decoration: none; margin:6px ; color: #87cefa;" ><strong>Price $36.99 USD</strong></a> </div></div>	
+				</div>
+				<div class="card_item5">
+					<img src="cold_mint.png" alt="Cold Mint" style="width: 80%; margin: 20px; margin-top: 5px;">
+					<div class="container_card"><h5 style="color: white; margin-left: 40px; margin-top: -40px;"><strong>COLD MINT</strong></h5>
+						<div class="border_rounded"><a href="" style="text-decoration: none; margin:6px ; color: #87cefa;" ><strong>Price $69.99 USD</strong></a> </div></div>	
+				</div>
+			</div><br><br>
+
+			<!--Jumbotron-->
+			<div class="container-fluid-lg">
+				<div class="jumbotron" style="background-color: #696969; background-image: url(cs.jpg); background-repeat: no-repeat;">
+					<h2 style="text-align: center; color: #ffd700; margin-top: -40px;">Buy cases with awesome CS:GO skins!</h2>
+					<p style="text-align: center; color: #fffaf0; font-size: 18px;">Follow us on social network, and keep up to date with the latest news</p>
+					<p style="text-align: center; color: #fffaf0; font-size: 18px;">And special offers.</p>
+					<p style="text-align: center; color: #fffaf0; font-size: 13px;">Do you need new, cool skins? Choose and Buy a case that you like !We have expensive skins and some exclusive cases that you will not find in the game. Weekly updates, giveaways, technical support and a lot of payment options with G2A pay. </p><br><br>
+
+					<div class="border_rounded2"><a href="" style="text-decoration: none; margin:6px ; color: #87cefa;" ><img src="steam.png"><strong style="color: black">Sign in through STEAM</strong></a> </div>
+					<img src="key.png" style="margin: 30px; margin-left: 500px;" ><br>
+					<h2 style="text-align: center; color: #fffaf0"><strong>65 132 901</strong></h2>
+					<p style="text-align: center; font-size: 16px; color: #fffaf0">OPENED CASES</p>	
+				</div>
+			</div><br><br>		
+		</div>
+
+		<!--Footer-->
+		<div class="container-fluid-lg">
+			<nav class="navbar navbar-expand-sm bg-dark">
+				<div style="width: 100px; float: left; margin-top: -70px; margin-left:50px; ">
+					<a href="facebook.com"><img src="facebook.png" style="width: 15px; margin-right: 5px;"></a>
+					<a href="twitter.com"><img src="twitter.png" style="width: 15px; margin-right: 5px;"></a>
+					<a href="instagram.com"><img src="instagram.png" style="width: 15px; margin-right: 5px;"></a>
+					<a href="reddit.com"><img src="reddit.png" style="width: 15px; margin-right: 5px;"></a>
+				</div>
+				<div style="width: 900px; margin-top: -3px; margin-left: 150px;">
+					<a href="" style="text-decoration:none; margin-right:30px; float: left;"><h6 style="color: #a9a9a9;"><strong>FAQ</strong></h6></a>
+					<a href="" style="text-decoration:none; margin-right:30px; float: left;"><h6 style="color: #a9a9a9;"><strong>CONTACT</strong></h6></a>
+					<a href="" style="text-decoration:none; margin-right:30px; float: left; "><h6 style="color: #a9a9a9;"><strong>ITEMS</strong></h6></a>
+					<a href="" style="text-decoration:none; margin-right:200px; float: left; "><h6 style="color: #a9a9a9;"><strong>TERMS AND CONDITIONS</strong></h6></a>
+					<a href="" style="text-decoration:none; margin-left:-170px; float: left; "><h6 style="color: #a9a9a9;"><strong>LEADERBOARD</strong></h6></a>
+					<a href="" style="text-decoration:none; margin-left:-30px; float: left; margin-right: 25px; "><h6 style="color: #a9a9a9;"><strong>SIGN IN</strong></h6></a>
+					<select>
+						<option><p>EN</option>
+						<option><p>IN</option>
+					</select>
+
+					<div style=" width: 155px; float: right; margin-right: -70px;"><img src="g2apay.jpg" style="width: 150px;"></div>
+				</div>
+			</nav>
+			<div style="width: 600px; float: left; margin-top: ; margin-left:50px; "> <strong style="color: #6495ED"><h6>&copy;2016-2020 FARMSKINS.COM</h6></strong></div>
+
+			<div style="width: 650px; float: left; margin-top:20px ; margin-left:50px; text-align: justify; "><p>WiseAvant as an administrator of the website adobts these Terms of Use that specifies User's rights and obligations and constitute a legally binding agreement for both parties. These Term of Use affect User's rights and impose certain obligations while using the website, so the User must read them carefully.</p></div>
+
+			<div style="width: 500px; float: right; margin-top:20px ; margin-right:30px;">
+				<img src="visa.png" style="width: 50px; margin-right: 30px;">
+				<img src="mastercard.png" style="width: 50px; margin-left: 20px;">
+				<img src="maestro.png" style="width: 50px;">
+				<img src="union-pay.png" style="width: 50px;">
+				<img src="cryptocurrency.png" style="width: 50px;">
+			</div>
+
+		</div>
+
+</body>
+</html>
